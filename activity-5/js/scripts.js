@@ -19,6 +19,16 @@ var data = [
         stars: 122,
         price: 'Free',
         selector: 'p2'
+    },
+    {
+        name: 'CSS Peek',
+        description: 'CSS Peek extends HTML and embedded javascript templates with Go to definition support for CSS classes and IDs found in your markup',
+        author: 'Pranay Prakash',
+        url: 'https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek',
+        downloads: '6889433',
+        stars: '87',
+        price: 'Free',
+        selector: 'p3',
     }
 ];
 
@@ -94,11 +104,18 @@ var init = function() {
      */
     
     //one-by-one
-    var emmet = new Package(data[0]);
-    writePackageInfo(emmet);
+    // var emmet = new Package(data[0]);
+    // writePackageInfo(emmet);
 
-    var beautify = new Package(data[1]);
-    writePackageInfo(beautify);
+    // var beautify = new Package(data[1]);
+    // writePackageInfo(beautify);
+
+    //for loop
+
+    for(var i = 0; i < data.length; i++) {
+        var package = new Package(data[i]);
+        writePackageInfo(package);
+    }
 }
 
 //Call the init function to run the script

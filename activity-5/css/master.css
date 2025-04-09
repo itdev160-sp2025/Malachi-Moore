@@ -12,3 +12,7 @@ body{
 #header-image {
     width: 100%;
 }
+
+.package-container{
+    margin-bottom: 10px;
+}
